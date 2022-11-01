@@ -12,7 +12,13 @@ appver=${appver//[:]/}
 appver=${appver//[.]/}
 echo this is the appversion : $appver
 
-#------generating digest
+#------write app version into getdown.txt
+sed '1d' app/beta/getdown.txt > tmpFile___.txt
+echo -e "version = $appver\n$(cat tmpFile___.txt)" > tmpFile___.txt
+cat tmpFile___.txt > app/beta/getdown.txt
+
+
+------generating digest
 java -classpath "$folder\getdown-core-1.8.7.jar" com.threerings.getdown.tools.Digester "app/beta"
 
 #------copying contents to new version's directory
@@ -24,4 +30,4 @@ cp -r app/beta/* "app/$appver"
 git add app/$appver/*
 git commit -m "added app version $appver"
 git push
-#read varname
+read varname
