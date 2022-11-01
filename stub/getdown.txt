@@ -1,1 +1,9 @@
 appbase = https://hiddenmachine3.github.io/testPublicRepo/app/beta
+
+ui.name = AppName
+
+code = testPublicRepo.jar
+
+class = Main
+
+allow_offline = true
