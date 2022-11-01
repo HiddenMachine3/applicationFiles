@@ -1,4 +1,5 @@
-appbase = https://hiddenmachine3.github.io/testPublicRepo/app/beta
+version = 20221102031456
+appbase = https://hiddenmachine3.github.io/testPublicRepo/app/%VERSION%
 
 ui.name = AppName
 
