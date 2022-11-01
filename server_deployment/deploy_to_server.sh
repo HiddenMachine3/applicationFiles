@@ -1,10 +1,17 @@
 cd ..
 
-#making package
-#rm -rf out/final_package/MazeApp_linux/*
-#rm -rf out/final_package/MazeApp_windows/*
-#java -jar "/opt/jar files/packr-all-4.0.0.jar" packaging/packr-config.json
-
 pwd
 #Generating digest.txt file
-java -classpath /opt/jar\ files/getdown-core-1.8.7.jar com.threerings.getdown.tools.Digester app/beta
+export folder="$USERPROFILE\important jars"
+#folder="/opt/jar\ files"
+#echo $folder
+
+appver=$(date +%Y.%m.%d).$(date +"%T")
+appver=${appver//[:]/}
+appver=${appver//[.]/}
+echo this is the appversion : $appver
+
+mkdir "app/$appver"
+
+java -classpath "$folder\getdown-core-1.8.7.jar" com.threerings.getdown.tools.Digester "app/$appver"
+read varname

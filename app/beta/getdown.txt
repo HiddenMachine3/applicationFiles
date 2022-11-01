@@ -7,3 +7,11 @@ code = testPublicRepo.jar
 class = Main
 
 allow_offline = true
+
+
+ui.background_image = background.jpg
+
+ui.icon = std_icon.png
+
+resource = background.jpg
+resource = std_icon.png
