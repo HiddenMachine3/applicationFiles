@@ -20,13 +20,8 @@ mkdir "app/$appver"
 cp -r app/beta/* "app/$appver"
 
 
-#------updating latest version info
-echo $appver > app/latestConfig/VERSION.txt
-
-
 #------adding folder to git
 git add app/$appver/*
-git add app/latestConfig/VERSION.txt
 git commit -m "added app version $appver"
 git push
 #read varname
