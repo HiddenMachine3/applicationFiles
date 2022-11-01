@@ -15,4 +15,4 @@ echo this is the appversion : $appver
 
 #java -classpath "$folder\getdown-core-1.8.7.jar" com.threerings.getdown.tools.Digester "app/$appver"
 java -classpath "$folder\getdown-core-1.8.7.jar" com.threerings.getdown.tools.Digester "app/beta"
-read varname
+#read varname
