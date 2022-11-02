@@ -1,0 +1,3 @@
+getdown.txt = 7fcadda8a3b12bc9a25e2de0eb74077c
+testPublicRepo.jar = e28b11852d936243350c0b09e81065b6
+digest.txt = f1f07eb073ff3a3cda666fa43001a862
