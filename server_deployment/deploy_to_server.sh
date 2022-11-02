@@ -29,5 +29,7 @@ cp -r app/beta/* "app/$appver"
 #------adding folder to git
 git add app/$appver/*
 git commit -m "added app version $appver"
-git push
+export passwordGit=$(cat "$folder/passtext.txt")
+git push https://HiddenMachine3:$passwordGit@github.com/HiddenMachine3/testPublicRepo.git/
+
 read varname
