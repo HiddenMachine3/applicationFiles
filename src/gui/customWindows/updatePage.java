@@ -1,4 +1,4 @@
-package customWindows;
+package gui.customWindows;
 
 import javax.swing.*;
 import java.awt.event.ActionListener;

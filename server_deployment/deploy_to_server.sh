@@ -2,8 +2,8 @@ cd ..
 pwd
 
 #------
-export folder="$USERPROFILE\important jars"
-#export folder="/opt/jar\ files"
+#export folder="$USERPROFILE\important jars"
+export folder="/opt/jar files"
 #echo $folder
 
 #------appversion
@@ -18,8 +18,8 @@ echo -e "version = $appver\n$(cat tmpFile___.txt)" > tmpFile___.txt
 cat tmpFile___.txt > app/beta/getdown.txt
 
 
-------generating digest
-java -classpath "$folder\getdown-core-1.8.7.jar" com.threerings.getdown.tools.Digester "app/beta"
+#------generating digest
+java -classpath "$folder/getdown-core-1.8.7.jar" com.threerings.getdown.tools.Digester "app/beta"
 
 #------copying contents to new version's directory
 mkdir "app/$appver"

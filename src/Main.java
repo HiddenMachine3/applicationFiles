@@ -1,5 +1,6 @@
+import controllers.Updater;
+
 import javax.swing.*;
-import java.util.Arrays;
 
 public class Main {
 
@@ -10,6 +11,9 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setVisible(true);
+
+        Updater updater = new Updater();
+        updater.performRoutine();
     }
 
 }
