@@ -1,0 +1,5 @@
+getdown.txt = 47eda616245bf6ac396fbc56d1a6dccb
+testPublicRepo.jar = 7222878f3498581db40c585429baf40c
+background.jpg = 38e85090d5b59b6fb15e505a45db0896
+std_icon.png = 2d58be89ecc6a364e6099ed1abf11b42
+digest.txt = 9582aba28907d9010e61af95c949f39a
