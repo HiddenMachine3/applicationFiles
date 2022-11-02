@@ -7,6 +7,8 @@ public class updatePage {
     private JButton downloadNewVersionButton;
     private JButton cancelButton;
     private JPanel mainPanel;
+    private JLabel currentVersionTag;
+    private JLabel newVersionTag;
     JFrame frame;
 
     public updatePage(ActionListener downloadAction, ActionListener cancelAction) {
@@ -27,4 +29,10 @@ public class updatePage {
     public void delete() {
         frame.dispose();
     }
+
+    public void setVersions(String curVer, String newVer) {
+        currentVersionTag.setText(curVer);
+        newVersionTag.setText(newVer);
+    }
+
 }
