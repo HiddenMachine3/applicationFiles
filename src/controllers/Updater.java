@@ -7,6 +7,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.Scanner;
 
@@ -29,9 +30,11 @@ public class Updater {
     private String getLatestVersion() {
         String text = null;
         try {
-            text = new Scanner(UtilityFunctions.getFile("LatestVersion.txt")).nextLine();
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found LatestVersion.txt!");
+            URL url = new URL("https://hiddenmachine3.github.io/testPublicRepo/app/LatestVersion.txt");
+
+            text = new Scanner(url.openStream()).nextLine();
+        } catch (IOException e) {
+            System.out.println("Could not find latest version!");
             newUpdateFound = false;
             return null;
         }
