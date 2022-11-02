@@ -11,34 +11,36 @@ import static com.threerings.getdown.util.LaunchUtil.updateVersionAndRelaunch;
 
 public class Updater {
 
-    boolean updateNecessary = true;//default value
+    boolean newUpdateFound = true;//default value
     String latestVersion = "";
+    updatePage updateWindow;
 
     public void checkForUpdates() {
         try {
             latestVersion = new Scanner(UtilityFunctions.getFile("LatestVersion.txt")).nextLine();
         } catch (FileNotFoundException e) {
             System.out.println("File not found LatestVersion.txt!");
-            updateNecessary = true;
+            newUpdateFound = false;
         }
     }
 
     public void performRoutine() {
         checkForUpdates();
-        if (updateNecessary) {
-            new updatePage(
+        if (newUpdateFound) {
+            updateWindow = new updatePage(
                     downloadAction -> {
-                        //todo: use getdownUtils to restart getdown(it makes the version.txt file by itself and relauches getdown)
                         try {
                             updateVersionAndRelaunch(UtilityFunctions.getFile(""), "getdown.jar", latestVersion, "");
+                            System.exit(1);//exit current application
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
 
                     },
                     cancelAction -> {
-                        System.exit(1);
-                    }).start();
+                        updateWindow.delete();
+                    });
+            updateWindow.start();
         }
 
     }
