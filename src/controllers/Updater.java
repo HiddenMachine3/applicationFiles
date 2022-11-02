@@ -11,14 +11,15 @@ import static com.threerings.getdown.util.LaunchUtil.updateVersionAndRelaunch;
 
 public class Updater {
 
-    boolean updateNecessary = false;//default value
+    boolean updateNecessary = true;//default value
     String latestVersion = "";
 
     public void checkForUpdates() {
         try {
             latestVersion = new Scanner(UtilityFunctions.getFile("LatestVersion.txt")).nextLine();
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.out.println("File not found LatestVersion.txt!");
+            updateNecessary = true;
         }
     }
 

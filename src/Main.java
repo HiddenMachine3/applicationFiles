@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Test");
 
-        JFrame frame = new JFrame("Yeah");//System.getProperty("java.class.path"));
+        JFrame frame = new JFrame("Updatable Version out now asdfawdesoyuqwernqwer!");//System.getProperty("java.class.path"));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setVisible(true);

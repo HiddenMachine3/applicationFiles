@@ -18,7 +18,7 @@ public class updatePage {
 
         frame.add(mainPanel);
         frame.pack();
-        frame.setUndecorated(false);
+//        frame.setUndecorated(false);
 
         frame.setVisible(true);
     }
