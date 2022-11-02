@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Test");
 
-        JFrame frame = new JFrame("A great shining beginning");//System.getProperty("java.class.path"));
+        JFrame frame = new JFrame("A great shining beginning 2");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setVisible(true);
