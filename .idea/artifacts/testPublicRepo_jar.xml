@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/app/beta</output-path>
     <root id="archive" name="testPublicRepo.jar">
       <element id="module-output" name="testPublicRepo" />
+      <element id="extracted-dir" path="/opt/jar files/getdown-core-1.8.7.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
