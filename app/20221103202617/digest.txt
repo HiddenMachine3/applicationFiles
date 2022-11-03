@@ -1,0 +1,11 @@
+getdown.txt = b1eca6b52e9a1e71a333c3e8ecd17cb0
+GUITesting.jar = de493a5f2e028e5e1bd2b4b28694d16e
+resources/fonts/Roboto-Regular.ttf = 8a36205bd9b83e03af0591a004bc97f4
+resources/images/homeIcon.png = d01c9424d5ba501d98db94d8731d57b3
+resources/images/logo.jpeg = 36bf23acea72fa3bffe55d025a2179fc
+resources/images/searchIcon.png = e008c421dabadbd6ed444f55ee83900e
+resources/images/background.jpg = ffaa1733c53fe713afa3cc9695fadada
+resources/images/std_icon.png = 2d58be89ecc6a364e6099ed1abf11b42
+resources/themes/FlatDarculaLaf.properties = 5a100ddc84fd9f04ca0041dbe37df7a1
+logback.xml = 74e03e77847996399fa228e86b3d9391
+digest.txt = cf7cd4d28a5ff021ad9c7b53d3bd818c
