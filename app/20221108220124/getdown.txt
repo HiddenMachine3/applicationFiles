@@ -1,4 +1,4 @@
-version = 20221108213920
+version = 20221108220124
 # The URL from which the client is downloaded
 appbase = https://hiddenmachine3.github.io/applicationFiles/app/%VERSION%
 

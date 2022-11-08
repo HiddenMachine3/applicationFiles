@@ -1,4 +1,4 @@
-getdown.txt = b740bac1cbff3961f1a21936147d7f23
+getdown.txt = 7a58ad3cf3dd0d039e342d9d4fa59789
 GUITesting.jar = 0e0a94bc58a0a52aed7f6ce761e28966
 resources/fonts/Roboto-Regular.ttf = 8a36205bd9b83e03af0591a004bc97f4
 resources/images/homeIcon.png = d01c9424d5ba501d98db94d8731d57b3
@@ -9,4 +9,4 @@ resources/images/background.jpg = ffaa1733c53fe713afa3cc9695fadada
 resources/images/std_icon.png = 2d58be89ecc6a364e6099ed1abf11b42
 resources/themes/FlatDarculaLaf.properties = c4fc65c20ef5f0e7aee097e1fd4e97cf
 logback.xml = 74e03e77847996399fa228e86b3d9391
-digest.txt = 8379e987a12fcf28a0c3956b5ca8d5d6
+digest.txt = 667897b3c2e0a836f4915e0aed997d9e
