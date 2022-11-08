@@ -20,6 +20,12 @@ ui.progress_bar = FF3333
 ui.status = 57, 245, 373, 68
 
 
+jvmarg = -Djasypt.encryptor.password=thisismypassword
+jvmarg = -Dlogback.configurationFile=logback.xml
+jvmarg = -Djasypt.encryptor.algorithm=PBEWithMD5AndDES
+jvmarg = -Djasypt.encryptor.iv-generator-classname=org.jasypt.iv.NoIvGenerator
+jvmarg = -Djava.awt.headless=false
+
 resource = resources/fonts/Roboto-Regular.ttf
 
 resource = resources/images/homeIcon.png
