@@ -1,0 +1,40 @@
+version = 20221109023502
+# The URL from which the client is downloaded
+appbase = https://hiddenmachine3.github.io/applicationFiles/app/%VERSION%
+
+# Application jar files
+code = GUITesting.jar
+
+# The main entry point for the application
+class = Main
+
+allow_offline = true
+
+# UI Configuration
+ui.name = CoralMetrix
+ui.background_image = resources/images/background.jpg
+ui.icon = resources/images/std_icon.png
+ui.progress = 17, 321, 458, 22
+ui.progress_bar = FF3333
+# Status rectangle: x=57 y=254 width=373 height=68
+ui.status = 57, 245, 373, 68
+
+
+jvmarg = -Djasypt.encryptor.password=thisismypassword
+jvmarg = -Dlogback.configurationFile=logback.xml
+jvmarg = -Djasypt.encryptor.algorithm=PBEWithMD5AndDES
+jvmarg = -Djasypt.encryptor.iv-generator-classname=org.jasypt.iv.NoIvGenerator
+jvmarg = -Djava.awt.headless=false
+
+resource = resources/fonts/Roboto-Regular.ttf
+
+resource = resources/images/homeIcon.png
+resource = resources/images/logo.png
+resource = resources/images/logo2.png
+resource = resources/images/searchIcon.png
+resource = resources/images/background.jpg
+resource = resources/images/std_icon.png
+
+resource = resources/themes/FlatDarculaLaf.properties
+
+resource = logback.xml
