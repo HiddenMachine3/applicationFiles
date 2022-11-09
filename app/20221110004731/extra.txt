@@ -1,0 +1,4 @@
+-Djasypt.encryptor.password=thisismypassword
+-Dlogback.configurationFile="/home/hidden-machine/Java Projects on Linux/GUITesting/out/app/logback.xml"
+-Djasypt.encryptor.algorithm=PBEWithMD5AndDES
+-Djasypt.encryptor.iv-generator-classname=org.jasypt.iv.NoIvGenerator
