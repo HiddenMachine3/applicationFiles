@@ -1,6 +1,6 @@
-version = 20221110004731
+version = 20221110004921
 # The URL from which the client is downloaded
-appbase = http://0.0.0.0:8002/app/
+appbase = https://hiddenmachine3.github.io/applicationFiles/app/%VERSION%
 
 # Application jar files
 code = GUITesting.jar
