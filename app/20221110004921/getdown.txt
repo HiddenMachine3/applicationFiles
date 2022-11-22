@@ -33,4 +33,4 @@ resource = resources/themes/FlatDarculaLaf.properties
 
 resource = logback.xml
 
-
+resource = extra.txt
